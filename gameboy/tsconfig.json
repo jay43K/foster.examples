@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "bin/game.js",
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules",
+        "bin",
+		"assets"
+    ]
+}

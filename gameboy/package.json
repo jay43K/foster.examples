@@ -1,0 +1,18 @@
+{
+  "name": "gbjam2016",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/Drazzke/gbjam2016",
+  "license": "MIT",
+  "author": {
+    "name": "Noel Berry",
+    "email": "thenberry@gmail.com",
+    "url": "http://noelberry.ca/"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.6",
+    "typescript": "^2.0.3"
+  }
+}

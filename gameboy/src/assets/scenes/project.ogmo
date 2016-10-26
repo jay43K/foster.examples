@@ -1,0 +1,328 @@
+{
+	"name": "gbjam",
+	"levelPaths": [
+		"."
+	],
+	"backgroundColor": "#282c34ff",
+	"gridColor": "#3c4049cc",
+	"anglesRadians": true,
+	"levelDefaultSize": {
+		"x": 320,
+		"y": 240
+	},
+	"levelMinSize": {
+		"x": 128,
+		"y": 128
+	},
+	"levelMaxSize": {
+		"x": 4096,
+		"y": 4096
+	},
+	"nextLayerTemplateExportID": 5,
+	"nextEntityTemplateExportID": 3,
+	"defaultExportMode": ".xml",
+	"entityTags": [
+		"clouds"
+	],
+	"layers": [
+		{
+			"definition": "entity",
+			"name": "bgclouds",
+			"gridSize": {
+				"x": 8,
+				"y": 8
+			},
+			"exportID": 2,
+			"requiredTags": [
+				"clouds"
+			],
+			"excludedTags": []
+		},
+		{
+			"definition": "grid",
+			"name": "solids",
+			"gridSize": {
+				"x": 8,
+				"y": 8
+			},
+			"exportID": 4,
+			"legend": {
+				"0": "#00000000",
+				"1": "#000000ff"
+			}
+		},
+		{
+			"definition": "tile",
+			"name": "terrain",
+			"gridSize": {
+				"x": 8,
+				"y": 8
+			},
+			"exportID": 3,
+			"exportMode": 1,
+			"defaultTileset": "terrain"
+		},
+		{
+			"definition": "entity",
+			"name": "entities",
+			"gridSize": {
+				"x": 4,
+				"y": 4
+			},
+			"exportID": 0,
+			"requiredTags": [],
+			"excludedTags": []
+		},
+		{
+			"definition": "entity",
+			"name": "fgclouds",
+			"gridSize": {
+				"x": 8,
+				"y": 8
+			},
+			"exportID": 1,
+			"requiredTags": [
+				"clouds"
+			],
+			"excludedTags": []
+		}
+	],
+	"entities": [
+		{
+			"exportID": 0,
+			"name": "door",
+			"limit": 0,
+			"size": {
+				"x": 8,
+				"y": 8
+			},
+			"origin": {
+				"x": 4,
+				"y": 8
+			},
+			"originAnchored": true,
+			"shape": {
+				"label": "Rectangle",
+				"points": [
+					{
+						"x": -1,
+						"y": -1
+					},
+					{
+						"x": 1,
+						"y": -1
+					},
+					{
+						"x": -1,
+						"y": 1
+					},
+					{
+						"x": 1,
+						"y": -1
+					},
+					{
+						"x": -1,
+						"y": 1
+					},
+					{
+						"x": 1,
+						"y": 1
+					}
+				]
+			},
+			"color": "#00ffadff",
+			"tileX": false,
+			"tileY": false,
+			"tileSize": {
+				"x": 16,
+				"y": 16
+			},
+			"resizeableX": false,
+			"resizeableY": false,
+			"rotatable": false,
+			"rotationDegrees": 360,
+			"canFlipX": false,
+			"canFlipY": false,
+			"canSetColor": false,
+			"hasNodes": false,
+			"nodeLimit": 0,
+			"nodeDisplay": 0,
+			"nodeGhost": true,
+			"tags": [],
+			"values": [
+				{
+					"name": "doorName",
+					"definition": "String",
+					"default": "",
+					"maxLength": 0,
+					"trimWhitespace": true
+				},
+				{
+					"name": "gotoScene",
+					"definition": "String",
+					"default": "",
+					"maxLength": 0,
+					"trimWhitespace": true
+				},
+				{
+					"name": "gotoDoor",
+					"definition": "String",
+					"default": "",
+					"maxLength": 0,
+					"trimWhitespace": true
+				}
+			]
+		},
+		{
+			"exportID": 1,
+			"name": "player",
+			"limit": 0,
+			"size": {
+				"x": 8,
+				"y": 8
+			},
+			"origin": {
+				"x": 4,
+				"y": 4
+			},
+			"originAnchored": true,
+			"shape": {
+				"label": "Rectangle",
+				"points": [
+					{
+						"x": -1,
+						"y": -1
+					},
+					{
+						"x": 1,
+						"y": -1
+					},
+					{
+						"x": -1,
+						"y": 1
+					},
+					{
+						"x": 1,
+						"y": -1
+					},
+					{
+						"x": -1,
+						"y": 1
+					},
+					{
+						"x": 1,
+						"y": 1
+					}
+				]
+			},
+			"color": "#ff0000ff",
+			"tileX": false,
+			"tileY": false,
+			"tileSize": {
+				"x": 16,
+				"y": 16
+			},
+			"resizeableX": false,
+			"resizeableY": false,
+			"rotatable": false,
+			"rotationDegrees": 360,
+			"canFlipX": false,
+			"canFlipY": false,
+			"canSetColor": false,
+			"hasNodes": false,
+			"nodeLimit": 0,
+			"nodeDisplay": 0,
+			"nodeGhost": true,
+			"tags": [],
+			"values": []
+		},
+		{
+			"exportID": 2,
+			"name": "cloud",
+			"limit": 0,
+			"size": {
+				"x": 64,
+				"y": 32
+			},
+			"origin": {
+				"x": 32,
+				"y": 16
+			},
+			"originAnchored": true,
+			"shape": {
+				"label": "Rectangle",
+				"points": [
+					{
+						"x": -1,
+						"y": -1
+					},
+					{
+						"x": 1,
+						"y": -1
+					},
+					{
+						"x": -1,
+						"y": 1
+					},
+					{
+						"x": 1,
+						"y": -1
+					},
+					{
+						"x": -1,
+						"y": 1
+					},
+					{
+						"x": 1,
+						"y": 1
+					}
+				]
+			},
+			"color": "#c3ff00b6",
+			"tileX": false,
+			"tileY": false,
+			"tileSize": {
+				"x": 16,
+				"y": 16
+			},
+			"resizeableX": false,
+			"resizeableY": false,
+			"rotatable": false,
+			"rotationDegrees": 360,
+			"canFlipX": false,
+			"canFlipY": false,
+			"canSetColor": false,
+			"hasNodes": false,
+			"nodeLimit": 0,
+			"nodeDisplay": 0,
+			"nodeGhost": true,
+			"tags": [
+				"clouds"
+			],
+			"values": [
+				{
+					"name": "index",
+					"definition": "Enum",
+					"choices": [
+						"0",
+						"1",
+						"2",
+						"3"
+					],
+					"default": 0
+				}
+			]
+		}
+	],
+	"tilesets": [
+		{
+			"label": "terrain",
+			"path": "..\\tilemap.png",
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAMAAAC6GQAEAAAAD1BMVEWbvA+LrA8wYjAPOA8AAACJ/uqnAAAABXRSTlP/////APu2DlMAAAHzSURBVFiF7ZaLbsMwCEUH5P+/eQ3mccGOkrWdVmmxthGn9gGuMd3XxsuxiT1IMSzbyfha84BwA2/gdeDZxhv4v4G0HM8DxQY3ezKm5Ql8pCfEehf0Z9hH4LslvSFwa2yuy+yvrmlANqqupCBqCDzm6WB/2BcOa9sRaAAZBLcWgTgZHJABiW3VA1GABiq57N7Ft3iuqpjOhcOar5KyQ0DDkSC5EkzhoCiTgiUQNqhGYj6jceWcyOd2uuyCEQB9wyLCfWGoZA6qMiHtdMo0aTiETUqWSNHQj3Sh4eN+DHFoVJYMJts8HOzzEVvE38rGABU4nHMCi4MCJOplMzbUitX3lqefDOccdJ2AAari6H446nQQly5Kf9LQQZJWAuSG3FMrbO4aJgibQwCX8wESuDtQh1AlcLvsEDKo8jKRdscwQgeVSmS7CjPLAJJWM8eUHYRqcwawclAU0od2KNy7cAoncTAwz7vs+zFl6Pq1s3sxTw6m7wNuzSGPC1pesoMqcRiCtjUHaM5pXXGJR+evNGwRZkBo4RjyM+hDXF+0fnjw5cnxGcvKKdiS8vnwKA8/n4HcfuvymgI32zU8cnwpdl/XyubKlhIQF/tj4IXxV8CrMj4d4bGDQ+D24vgFIJfxBmD93/oTU741/EDgreHrwLdr+GbgN5kKPJ8cybA4AAAAAElFTkSuQmCC",
+			"tileWidth": 8,
+			"tileHeight": 8,
+			"tileSeparationX": 0,
+			"tileSeparationY": 0
+		}
+	]
+}
