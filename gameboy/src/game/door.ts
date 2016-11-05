@@ -77,11 +77,11 @@ class Door extends Entity
 
 	public render():void
 	{
-		Engine.graphics.pixelRect(new Rectangle(this.x + -6, this.y - 13, 12, 13), Game.COLORS[3]);
-		Engine.graphics.pixelRect(new Rectangle(this.x + -5, this.y - 12, 10, 12), Game.COLORS[2]);
-		Engine.graphics.pixelRect(new Rectangle(this.x + -4, this.y - 11, 8, 11), Game.COLORS[3]);
+		Engine.graphics.rect(this.x + -6, this.y - 13, 12, 13, Game.COLORS[3]);
+		Engine.graphics.rect(this.x + -5, this.y - 12, 10, 12, Game.COLORS[2]);
+		Engine.graphics.rect(this.x + -4, this.y - 11, 8, 11, Game.COLORS[3]);
 
 		if (!this.isOpen)
-			Engine.graphics.pixelRect(new Rectangle(this.x + -3, this.y - 10, 6, 10 * this.closedEase), Game.COLORS[2]);
+			Engine.graphics.rect(this.x + -3, this.y - 10, 6, 10 * this.closedEase, Game.COLORS[2]);
 	}
 }

@@ -54,7 +54,7 @@ class Game
 
 		// assets
 		var assets = new AssetLoader()
-			.addAtlas("gfx", "assets/atlas.png", "assets/atlas.json", AtlasType.ASEPRITE)
+			.addAtlas("gfx", "assets/atlas.png", "assets/atlas.json", AtlasReaders.Aseprite)
 			.addJson("assets/scenes/bottom.json")
 			.addJson("assets/scenes/bottom2.json")
 			.load(() => { Game.begin(); });

@@ -142,9 +142,9 @@ class Level extends Scene
             Engine.graphics.setRenderTarget(Engine.graphics.buffer);
             Engine.graphics.shader = Shaders.texture;
 			Engine.graphics.shader.set("matrix", this.camera.matrix);
-			Engine.graphics.pixelRect(new Rectangle(left - 1, py, Engine.width + 2, Engine.height), color);
-			Engine.graphics.pixelTriangle(new Vector(left, py), new Vector(left - 32, py + Engine.height), new Vector(left, py + Engine.height), color);
-			Engine.graphics.pixelTriangle(new Vector(right, py), new Vector(right + 32, py), new Vector(right, py + Engine.height), color);
+			Engine.graphics.rect(left - 1, py, Engine.width + 2, Engine.height, color);
+			Engine.graphics.triangle(new Vector(left, py), new Vector(left - 32, py + Engine.height), new Vector(left, py + Engine.height), color);
+			Engine.graphics.triangle(new Vector(right, py), new Vector(right + 32, py), new Vector(right, py + Engine.height), color);
 		}
 	}
 }
