@@ -2,7 +2,7 @@
   "name": "gbjam2016",
   "version": "0.0.1",
   "description": "",
-  "homepage": "https://github.com/Drazzke/gbjam2016",
+  "homepage": "https://github.com/NoelFB/foster.examples/gameboy",
   "license": "MIT",
   "author": {
     "name": "Noel Berry",
@@ -13,6 +13,6 @@
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.1.2",
-    "typescript": "^2.1.0-dev.20161105"
+    "typescript": "^2.1.4"
   }
 }
