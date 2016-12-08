@@ -29,12 +29,10 @@ gulp.task("default", ["clean"], function()
 	return gulp.start(["assets", "ts"]);
 });
 
-// Note: This task wont work for you unless electron.exe is in the same location
-// so should probably swap this out with some kind of npm module that does it for us?
-// will look into it later ...
+// NOTE: this requires that you have Electron globally installed:
+// npm install -g electron
 gulp.task("run", function()
 {
-	var exec = require("child_process").execFileSync;
-	exec("C:/Program Files/Electron/electron.exe", [__dirname + "/bin/"]);
-	process.exit();
+	var exec = require("child_process").exec;
+	exec("electron ./bin/");
 });
